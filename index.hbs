@@ -33,7 +33,7 @@
 
                 </div>
                 <div id="posts-main" class="post-feed post-feed-index">
-                    {{#get "posts" limit="all"}}
+                    {{#get "posts" limit="all" include="authors"}}
                         {{#foreach posts}}
                         {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
                         {{> "post-card"}}
